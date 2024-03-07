@@ -4,6 +4,7 @@ const { log } = console;
 const form = document.getElementById("form");
 const input = document.getElementById("userInput");
 const feedback = document.getElementById("feedback");
+let year = document.getElementById("year");
 
 /* Write a program to check whether a number is an armstrong number or not. Return true if the number is Arm Strong otherwise return false */
 /* Armstrong number example: 1^3 + 5^3 + 3^3 = 153 */
@@ -76,6 +77,9 @@ form.addEventListener("submit", (e) => {
     }
   }
 });
+
+// getting copyright year dynamically
+year.textContent = new Date().getFullYear();
 
 // THOUSAND WAYS TO SOLVE THIS CHALLENGE, HERE IS MINE AND IT WORKS.
 // HAPPY CODING
