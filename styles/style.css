@@ -1,0 +1,208 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121111;
+  color: #fff;
+}
+
+#container {
+  width: 30%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.879);
+  /* backdrop-filter: blur(25px); */
+  padding: 3rem 1rem 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 10px -10px 1px rgba(34, 34, 34, 0.748);
+  border: 1px solid #eeeeee21;
+
+  /* Positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #eeeeee;
+}
+
+.checker {
+  text-decoration: underline;
+  color: #eeeeeed0;
+}
+
+.header p {
+  color: #eeeeeeb4;
+  margin: 1rem auto 2.5rem;
+  width: 80%;
+  font-family: calibri;
+}
+
+.form-group {
+  margin: 2rem 0 1rem 0;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 0.4rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  color: #eeeeee;
+  background-color: rgba(26, 26, 26, 0.748);
+
+  /*  */
+  border: 1px solid #eeeeee21;
+  outline: none;
+  border-radius: 0.4rem;
+}
+
+/* Remove input:number arrow button */
+.form-group input::-webkit-outer-spin-button,
+.form-group input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.form-group input::placeholder {
+  font-size: 1rem;
+  font-family: calibri;
+  letter-spacing: 0.1rem;
+}
+
+#feedback {
+  margin: 0.5rem 0 1rem;
+  /* color: #eeeeeed0; */
+  font-family: calibri;
+}
+
+/* Validtion styles */
+
+.emptyInput {
+  border: 1px solid crimson !important;
+}
+.armstrong {
+  color: mediumseagreen;
+}
+.notarmstrong {
+  color: crimson;
+}
+
+.btn button {
+  margin: 1rem 0 0;
+  background-color: #eeeeee;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  box-shadow: 8px -8px 1px rgba(26, 26, 26, 0.748);
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  box-shadow: -8px 8px 1px rgb(26, 26, 26);
+  background-color: #c2c2c2;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0rem;
+  background-color: rgba(26, 26, 26, 0.277);
+  padding: 1rem;
+}
+
+footer .footer {
+    text-align: center;
+    font-family: calibri;
+    font-size: 1rem;
+    color: #545454
+}
+/*?--------------------- Media queries ---------------------*/
+@media (max-width: 1023px) {
+  #container {
+    width: 60%;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #container {
+    width: 60%;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 545px) {
+  #container {
+    width: 70%;
+  }
+
+  .header h1 {
+    font-size: 1.7rem;
+  }
+
+  .header p {
+    margin: 1rem auto 2rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #container {
+    width: 90%;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    margin: 1rem auto 2rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    font-size: 1.2rem;
+  }
+
+  .btn button {
+    padding: 0.7rem 3rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    width: 100%;
+    padding: .8rem;
+  }
+  
+  footer .footer {
+      font-size: .8rem;
+  }
+}
+@media (max-width: 280px) {
+  .header h1 {
+    font-size: 1rem;
+  }
+
+  .header p {
+    margin: 0.5rem auto 2rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}

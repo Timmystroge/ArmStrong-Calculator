@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <div id="wrapper">
+          <div class="header">
+            <h1>ArmStrong <span class="checker">Checker</span></h1>
+            <p>
+              Enter Number below to check if the number is an Arm Strong Number
+              or not.
+            </p>
+          </div>
+
+          <!-- Form -->
+          <form method="POST" id="form">
+            <div class="form-group">
+              <input
+                type="number"
+                name="userInput"
+                id="userInput"
+                
+                placeholder="Enter Number"
+              />
+            </div>
+
+            <!-- Feed bacjk message goes in here -->
+            <p id="feedback"></p>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="btn">
+              <button id="btn" type="submit">Check</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">&copy; <span id="year"></span> TimmyStroge.</div>
+    </footer>
+
+    <script src="sandbox.js"></script>
+  </body>
+</html>
